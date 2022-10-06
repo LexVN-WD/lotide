@@ -13,7 +13,8 @@ const assertEqual = function (actual, expected) {
 //(example): countLetters('LHL') should return L: 2 and H: 1
 
 const countLetters = (sentence) => {
-  const letters = sentence.split('');
+  const letters = sentence.split("");
+  console.log(letters);
   //split the sentence into an array of letters
   const results = {};
   //let result be an empty object
@@ -28,4 +29,4 @@ const countLetters = (sentence) => {
   return results;
 };
 
-countLetters("hello");
+countLetters("hello hello hello yo this is weird");
