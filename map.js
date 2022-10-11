@@ -1,3 +1,4 @@
+// Assertions
 const eqArrays = function (array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -20,21 +21,19 @@ const assertArraysEqual = function (actual, expected) {
   }
 };
 
-const without = function (source, itemsToRemove) {
-  let sourceEdit = [];
-  for (let i = 0; i < source.length; i++) {
-    if (itemsToRemove.indexOf(source[i]) === -1) {
-      sourceEdit.push(source[i]);
-    }
+const words = ["ground", "control", "to", "major", "tom"];
+
+const map = function(array, callback) {
+
+  const results = [];
+
+  for (let item of array) {
+    results.push(callback(item));
   }
-  console.log(sourceEdit);
-}
+  return results;
+};
 
-without([1, 2, 3], [1]); // => [2, 3]
+const results1 = map(words, word => word[0]);
+console.log(results1);
 
-without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
-
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
