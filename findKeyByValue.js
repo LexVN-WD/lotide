@@ -4,14 +4,7 @@
 return the first key which contains the given value.If no key with that given value is found, then it should return undefined*/
 
 //Assert
-const assertEqual = function (actual, expected) {
-
-  if (actual === expected) {
-    console.log(`👍👍👍 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`👎👎👎 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
 const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
@@ -30,7 +23,7 @@ const findKeyByValue = function(objects, value) {
       // for value of keys, if the value is equal to the object key value, result will be equal to key
     }
   }
-  return result
+  return result;
 };
 
 // console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));

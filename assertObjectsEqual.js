@@ -1,12 +1,12 @@
 //eqArrays FUNCTION
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   }
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
       return false;
-      // if value at array1 index does not equal to value at array2 index, return false 
+      // if value at array1 index does not equal to value at array2 index, return false
     }
   }
   return true;
@@ -14,7 +14,7 @@ const eqArrays = function (array1, array2) {
 };
 
 // eqObjects FUNCTION
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
   // let keys1 and keys2 equal keys for respective objects
@@ -38,7 +38,7 @@ const eqObjects = function (object1, object2) {
 //Code
 
 const assertObjectsEqual = function(actual, expected) {
-  const inspect = require('util').inspect; 
+  const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {
     console.log(`👍👍👍 Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
