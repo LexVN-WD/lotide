@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@lexvn-wd/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide Repository - Lighthouse Labs - Module 1 Assignment",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/LexVN-WD/lotide.git"
   },
-  "author": "",
+  "author": "Alexander Van-Nugent <apvannug.lhl.webdev@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LexVN-WD/lotide/issues"
