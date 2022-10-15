@@ -1,3 +1,5 @@
+const { count } = require("console");
+
 //ASSERT 
 const assertEqual = function (actual, expected) {
 
@@ -29,4 +31,6 @@ const countLetters = (sentence) => {
   return results;
 };
 
-countLetters("hello hello hello yo this is weird");
+//countLetters("hello hello hello yo this is weird");
+
+module.exports = countLetters;
