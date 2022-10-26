@@ -32,6 +32,8 @@ const without = function(source, itemsToRemove) {
   console.log(sourceEdit);
 };
 
+//testing on  new computer
+
 // without([1, 2, 3], [1]); // => [2, 3]
 
 // without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
