@@ -1,7 +1,3 @@
-// IMPORT
-const eqArrays = require("./eqArrays")
-const assertArraysEqual = require("./assertArraysEqual")
-
 // CODE
 const map = function(array, callback) {
 

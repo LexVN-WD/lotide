@@ -1,8 +1,3 @@
-//IMPORTS
-// const assertEqual = require('./assertEqual');
-// const eqArrays = require('./eqArrays');
-// const assertArraysEqual = require('./assertArraysEqual');
-
 // REFACTORED CODE
 const without = function(source, itemsToRemove) {
   let sourceEdit = [];

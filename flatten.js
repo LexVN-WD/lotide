@@ -1,8 +1,3 @@
-//IMPORT
-const assertEqual = require('./assertEqual');
-const eqArrays = require('./eqArrays');
-const assertArraysEqual = require('./assertArraysEqual');
-
 // REFACTORED CODE
 const flatten = function(arrays) {
   let newArr = [];

@@ -1,6 +1,4 @@
 // IMPORT
-const assertEqual = require('./assertEqual');
-
 // CODE
 const findKey = function(object, callback) {
   let keys = Object.keys(object);

@@ -1,6 +1,3 @@
-// IMPORT
-// const assertEqual = require('./assertEqual');
-
 // REFACTORED CODE
 const findKeyByValue = function(object, value) {
   const keys = Object.keys(object);

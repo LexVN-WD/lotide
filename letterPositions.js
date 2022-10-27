@@ -1,7 +1,3 @@
-// IMPORT
-const eqArrays = require("./eqArrays")
-const assertArraysEqual = require("./assertArraysEqual")
-
 // CODE
 const letterPositions = function(sentence) {
   const results = {};

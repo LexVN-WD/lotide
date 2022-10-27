@@ -1,6 +1,4 @@
-// IMPORT
-// const assertEqual = require('./assertEqual');
-
+// CODE
 const head = function(array) {
   if (array === []) {
     // if the array is empty(null), return 'undefined'
