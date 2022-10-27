@@ -1,10 +1,9 @@
-//IMPORTS
+//IMPORT
 const assertEqual = require('./assertEqual');
 const eqArrays = require('./eqArrays');
 const assertArraysEqual = require('./assertArraysEqual');
 
 // REFACTORED CODE
-
 const flatten = function(arrays) {
   let newArr = [];
   // create new empty array
@@ -28,18 +27,5 @@ const flatten = function(arrays) {
   // return the now flattened array
 };
 
-/* ORIGINAL CODE
-const flatten = function(arrays) {
-  return arrays.flat(1);
-}; */
-
-
-// TESTS
-/* const nested = [1, 2, [3, 4], 5, [6]];
-console.log(flatten(nested));
-
-const nested2 = [1, 2, [3, 4], [5], [6], [7, 8, 9, 10]];
-console.log(flatten(nested2));
- */
 // EXPORT
 module.exports = flatten;

@@ -1,7 +1,8 @@
-const assertEqual = require('./assertEqual');
+// IMPORT
+// const assertEqual = require('./assertEqual');
 
 const head = function(array) {
-  if (array === null) {
+  if (array === []) {
     // if the array is empty(null), return 'undefined'
     return 'undefined';
   } else {
@@ -10,4 +11,5 @@ const head = function(array) {
   }
 };
 
+// EXPORT
 module.exports = head;

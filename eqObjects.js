@@ -1,4 +1,4 @@
-//IMPORTS
+//IMPORT
 const assertArraysEqual = require('./assertArraysEqual');
 const assertEqual = require('./assertEqual');
 const eqArrays = require('./eqArrays');
@@ -12,7 +12,6 @@ const eqObjects = function(object1, object2) {
     return false;
   }
   // if the lengths of keys1 and keys 2 are not equal, return false
-
   for (const keys of keys1) {
     const isObj1Arr = Array.isArray(object1[keys]);
     const isObj2Arr = Array.isArray(object2[keys]);
@@ -31,26 +30,5 @@ const eqObjects = function(object1, object2) {
   // otherwise, return true
 };
 
-// ORIGINAL CODE
- /*  const keys1 = Object.keys(object1);
-  const keys2 = Object.keys(object2);
-// let keys1 and keys2 equal keys for respective objects
-  let result = true;
-// let result equal an empty value
-  if(keys1.length === keys2.length) {
-    for(const key of keys1) {
-      if(Array.isArray(object1[key])) {
-        let arrays = eqArrays(object1[key], object2[key]);
-        if(arrays === false) result = false;
-        } else if (object1[key] !== object2[key]) {
-            result = false;
-          }
-        } 
-      } else {
-        return result = false;
-      }
-      return result;
-}; */
-
-//EXPORTS
+//EXPORT
 module.exports = eqObjects;

@@ -1,9 +1,8 @@
-//TEST ASSERTIONS
+// IMPORT
 const eqArrays = require('./eqArrays');
 const assertArraysEqual = require('./assertArraysEqual');
 
-// MAIN CODE
-
+// CODE
 const middle = function(arrays) {
   if (arrays.length <= 2) {
     return [];
@@ -24,4 +23,5 @@ const middle = function(arrays) {
   }
 };
 
+// EXPORT
 module.exports = middle;

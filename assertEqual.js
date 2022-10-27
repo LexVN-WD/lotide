@@ -1,3 +1,4 @@
+// CODE
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {
@@ -7,4 +8,5 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+// EXPORT
 module.exports = assertEqual;
